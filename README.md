@@ -42,6 +42,7 @@ Available Commands:
   packages    List packages.
   r2          Use redress with in r2.
   source      Source Code Projection.
+  tm          Calculate Approxmiate Timestamp.
   types       List types.
   version     Display redress version information.
 
@@ -68,6 +69,19 @@ Main root  /Users/ronald/git/go-workspace/src/keybase.io/safetycrew/pplauncher
 # std      35
 # vendor   2
 ```
+### Timestamp
+
+There is a possibility to calculate timestamp using version of 3rd party dependency.
+The algorithm:
+1. Get a list of dependencies
+2. Get the dependency version
+3. Get the date of a specific version (release) of the dependency
+4. Create a list of dates
+5. Take the latest date, it will be the approximate (minimum) timestamp
+
+More info in blogpost:
+https://www.orderofsixangles.com/en/2022/07/09/goelf-time-en.html
+https://www.orderofsixangles.com/ru/2022/07/09/goelf-time-ru.html
 
 ### Packages
 

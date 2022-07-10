@@ -11,7 +11,7 @@ import (
 	"strings"
 
 	"github.com/cheynewallace/tabby"
-	gore "github.com/goretk/gore"
+	"github.com/goretk/gore"
 	"github.com/spf13/cobra"
 )
 
